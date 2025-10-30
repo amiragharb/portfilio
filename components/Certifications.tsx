@@ -10,7 +10,7 @@ const Certifications = React.forwardRef<HTMLElement, CertificationsProps>(({ cer
 		<>
 			{/* Certifications section */}
 			<section id="certifications" ref={ref} className="py-24">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-white">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-primary">
 					Certifications
 					<span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-primary rounded-full" />
 				</h2>
@@ -35,7 +35,7 @@ const Certifications = React.forwardRef<HTMLElement, CertificationsProps>(({ cer
 
 			{/* Languages section */}
 			<section id="languages" className="py-24">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-white">
+				<h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-primary">
 					Languages
 					<span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-primary rounded-full" />
 				</h2>

@@ -22,7 +22,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 const Projects = React.forwardRef<HTMLElement, ProjectsProps>(({ projects }, ref) => {
     return (
         <section ref={ref} id="projects" className="py-24">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-primary">
                 Academic & Professional Projects
                  <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-primary rounded-full" />
             </h2>

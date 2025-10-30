@@ -9,7 +9,7 @@ interface ContactProps {
 const Contact = React.forwardRef<HTMLElement, ContactProps>(({ contact }, ref) => {
     return (
         <footer ref={ref} id="contact" className="py-24 text-center border-t border-border/10 mt-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Let's Connect</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Let's Connect</h2>
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">
                 Open to collaboration and exciting opportunities in AI and Mobile Development.
             </p>

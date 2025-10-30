@@ -37,7 +37,7 @@ const ExperienceItem: React.FC<{ item: Experience; index: number }> = ({ item, i
 const ExperienceComponent = React.forwardRef<HTMLElement, ExperienceProps>(({ experiences }, ref) => {
     return (
         <section ref={ref} id="experience" className="py-24">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative text-primary">
                 Professional Experience
                 <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-primary rounded-full" />
             </h2>

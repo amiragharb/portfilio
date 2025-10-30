@@ -22,11 +22,11 @@ const cvData: CVData = {
   ],
   skills: {
   languages: ["Java","C","C++","C#","Python","PHP","JavaScript","TypeScript","HTML","CSS","XML","Kotlin","Swift","Dart"],
-    frameworks: ["Flutter","React","Next.js","Node.js","Android","iOS","Symfony","Spring Boot"],
-    ai: ["Machine Learning","Deep Learning","LLMs"],
-    tools: ["Docker","XAMPP","Git","GitHub","GitLab CI/CD","Postman","Swagger","Firebase","Jira"],
-    db: ["SQL","Oracle","MongoDB","Azure Data Studio"],
-    design: ["Figma","Adobe Photoshop","Canva"]
+    Frameworks: ["Flutter","React","Next.js","Node.js","Android","iOS","Symfony","Spring Boot"],
+    Ai: ["Machine Learning","Deep Learning","LLMs"],
+    Tools: ["Docker","XAMPP","Git","GitHub","GitLab CI/CD","Postman","Swagger","Firebase","Jira"],
+    Db: ["SQL","Oracle","MongoDB","Azure Data Studio"],
+    Design: ["Figma","Adobe Photoshop","Canva"]
   },
   experience: [
     {
