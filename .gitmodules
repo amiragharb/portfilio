@@ -1,4 +1,4 @@
-[submodule "portfilio"]       # ou "portfolio" si c’est le bon nom
-    path = portfilio          # ou "portfolio" si tu renommes le dossier
-    url = https://github.com/amiragharb/portfilio.git
+[submodule "portfolio"]       # ou "portfolio" si c’est le bon nom
+    path = portfolio          # ou "portfolio" si tu renommes le dossier
+    url = https://github.com/amiragharb/portfolio.git
     branch = main
