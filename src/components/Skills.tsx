@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
-import { Skills as SkillsType } from '../types';
+import { Skills as SkillsType } from '../../types';
 
 interface SkillsProps {
     skills: SkillsType;

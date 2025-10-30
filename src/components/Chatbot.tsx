@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Bot, X, Send, User, Sparkles } from 'lucide-react';
-import { getAiCvResponse } from '../services/geminiService';
-import { CVData, Message } from '../types';
+import { CVData, Message } from '../../types';
+import { getAiCvResponse } from '../../services/geminiService';
 
 interface ChatbotProps {
     cvData: CVData;

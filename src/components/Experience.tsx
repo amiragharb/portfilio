@@ -1,6 +1,6 @@
 import React from 'react';
 import { Briefcase } from 'lucide-react';
-import { Experience } from '../types';
+import { Experience } from '../../types';
 
 interface ExperienceProps {
     experiences: Experience[];

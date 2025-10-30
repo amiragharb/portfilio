@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Github } from 'lucide-react';
-import { Contact as ContactType } from '../types';
+import { Contact as ContactType } from '../../types';
 
 interface ContactProps {
     contact: ContactType;
