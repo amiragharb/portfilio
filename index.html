@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09070d" />
     <meta name="description" content="Amira Gharbi — AI and mobile developer building thoughtful digital products." />
+    <script>
+      try {
+        const theme = localStorage.getItem('portfolio-theme') === 'light' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#f7f5f8' : '#09070d');
+      } catch { document.documentElement.dataset.theme = 'dark'; }
+    </script>
     <title>Amira Gharbi — AI & Mobile Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>

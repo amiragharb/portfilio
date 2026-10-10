@@ -8,7 +8,12 @@ const navLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
-const Header: React.FC = () => {
+type HeaderProps = {
+  theme: 'dark' | 'light';
+  onToggleTheme: () => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ theme, onToggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -116,6 +121,17 @@ const Header: React.FC = () => {
           ))}
         </ul>
         <a className={`nav-contact ${activeSection === 'contact' ? 'is-active' : ''}`} href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>CONTACT ME</a>
+        <button
+          className="theme-toggle"
+          type="button"
+          onClick={onToggleTheme}
+          aria-pressed={theme === 'light'}
+          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          <span aria-hidden="true">{theme === 'dark' ? '☼' : '☾'}</span>
+          <span className="theme-toggle-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+        </button>
       </nav>
     </header>
   );
