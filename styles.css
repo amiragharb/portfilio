@@ -2033,3 +2033,12 @@ body { background: radial-gradient(ellipse at 48% 4%, #1d1029 0, #0c0812 42%, #0
   .chatbot-panel.is-open { animation: none; }
   .luna-avatar, .luna-suggestions button, .luna-actions button, .chatbot-send { transition: none; }
 }
+
+/* Reserve room for the circular theme control beside the contact action. */
+.portfolio-nav > .nav-contact { margin-right: 62px; }
+@media (max-width: 760px) {
+  .portfolio-nav > .nav-contact { margin-right: 46px; }
+}
+@media (max-width: 480px) {
+  .portfolio-nav > .nav-contact { margin-right: 44px; }
+}
