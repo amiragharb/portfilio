@@ -2042,3 +2042,57 @@ body { background: radial-gradient(ellipse at 48% 4%, #1d1029 0, #0c0812 42%, #0
 @media (max-width: 480px) {
   .portfolio-nav > .nav-contact { margin-right: 44px; }
 }
+
+/* Technology section: override its later dark-mode component rules in light mode. */
+html[data-theme='light'] .tech-constellation::before {
+  border-color: rgba(108, 77, 130, .2);
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(210, 187, 225, .3), transparent 70%),
+    linear-gradient(110deg, rgba(248, 243, 250, .96), rgba(234, 235, 245, .96));
+  box-shadow: 0 12px 32px rgba(73, 51, 88, .07), inset 0 1px rgba(255, 255, 255, .9);
+}
+html[data-theme='light'] .tech-path-base { stroke: rgba(111, 75, 132, .25); }
+html[data-theme='light'] .tech-path-pulse { stroke: #9366ae; filter: drop-shadow(0 0 4px rgba(147, 102, 174, .35)); }
+html[data-theme='light'] .tech-constellation-node > span {
+  border-color: rgba(111, 75, 132, .36);
+  color: #66467e;
+  background: radial-gradient(circle at 35% 25%, #fff, #d8c5e4 67%, #b99bc9);
+  box-shadow: 0 0 0 6px rgba(147, 102, 174, .1), 0 5px 18px rgba(82, 55, 100, .16), inset 0 0 12px rgba(255, 255, 255, .84);
+}
+html[data-theme='light'] .tech-constellation-node b {
+  border-color: rgba(111, 75, 132, .2);
+  color: #54396a;
+  background: rgba(250, 247, 252, .94);
+  box-shadow: 0 4px 12px rgba(73, 51, 88, .08);
+}
+html[data-theme='light'] .tech-group,
+html[data-theme='light'] .tech-group:nth-child(n) {
+  border-color: rgba(108, 77, 130, .19);
+  background: linear-gradient(145deg, rgba(255, 253, 255, .97), rgba(241, 236, 246, .96));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .95), 0 12px 30px rgba(73, 51, 88, .07);
+}
+html[data-theme='light'] .tech-group:hover {
+  border-color: rgba(118, 80, 145, .42);
+  background: linear-gradient(145deg, #fff, #eee6f4);
+  box-shadow: inset 0 1px #fff, 0 18px 38px rgba(73, 51, 88, .12);
+}
+html[data-theme='light'] .tech-group::before { border-color: rgba(118, 80, 145, .1); box-shadow: 0 0 0 14px rgba(169, 110, 200, .035), 0 0 0 34px rgba(169, 110, 200, .025); }
+html[data-theme='light'] .tech-group-symbol {
+  border-color: rgba(118, 80, 145, .26);
+  color: #67447d;
+  background: radial-gradient(circle at 35% 28%, #fff, #e7d9ef 78%);
+  box-shadow: 0 0 14px rgba(118, 80, 145, .1);
+}
+html[data-theme='light'] .tech-group-heading h4 { color: #302438; }
+html[data-theme='light'] .tech-group-mark { color: #896f99; }
+html[data-theme='light'] .tech-item {
+  border-color: rgba(108, 77, 130, .2);
+  color: #392d42;
+  background: rgba(255, 255, 255, .78);
+}
+html[data-theme='light'] .tech-item:hover {
+  border-color: rgba(118, 80, 145, .46);
+  color: #54396a;
+  background: #f0e7f5;
+}
+html[data-theme='light'] .tech-item-mark { color: #66467e; background: #ebe1f1; }
