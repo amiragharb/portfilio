@@ -708,19 +708,40 @@ html[data-theme='light'] .ambient-starfield { opacity: .2; }
 html[data-theme='light'] .ambient-grid { opacity: .07; }
 html[data-theme='light'] .ambient-glow-one { background: #ba91d1; opacity: .18; }
 html[data-theme='light'] .ambient-glow-two { background: #8ea9cf; opacity: .16; }
+/* Keep the theme switch on the same header row, at its far right edge. */
+.portfolio-nav { position: relative; }
+.theme-toggle { position: absolute; z-index: 2; top: 50%; right: 0; transform: translateY(-50%); }
+.theme-toggle:hover { transform: translateY(calc(-50% - 2px)); }
+.nav-contact { margin-right: 52px; }
+html[data-theme='light'] body {
+  background:
+    radial-gradient(ellipse at 10% 12%, rgba(190, 151, 216, .52), transparent 35%),
+    radial-gradient(ellipse at 88% 34%, rgba(150, 179, 220, .4), transparent 38%),
+    radial-gradient(ellipse at 56% 100%, rgba(224, 174, 204, .28), transparent 42%),
+    linear-gradient(135deg, #e9dfef 0%, #f0e7ef 48%, #e1e8f2 100%);
+}
+html[data-theme='light'] .portfolio-shell {
+  background:
+    radial-gradient(ellipse at 8% 8%, rgba(198, 163, 220, .42), transparent 32%),
+    radial-gradient(ellipse at 94% 52%, rgba(163, 188, 222, .31), transparent 37%),
+    linear-gradient(135deg, rgba(241, 232, 246, .58), rgba(230, 235, 245, .5));
+}
 @media (max-width: 760px) {
-  .theme-toggle { width: 36px; min-width: 36px; height: 36px; min-height: 36px; margin-left: 0; flex-basis: 36px; }
+  .theme-toggle { width: 36px; min-width: 36px; height: 36px; min-height: 36px; margin: 0; }
+  .nav-contact { margin-right: 43px; }
 }
 @media (min-width: 761px) and (max-width: 1200px) {
-  .portfolio-nav { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto; gap: clamp(8px, 1.2vw, 18px); }
+  .portfolio-nav { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: clamp(8px, 1.2vw, 18px); }
   .portfolio-nav-links { justify-self: center; }
   .nav-contact { justify-self: end; margin-left: 0; }
-  .theme-toggle { justify-self: end; }
 }
 @media (min-width: 1201px) {
-  .portfolio-header .portfolio-nav { min-height: min(700px, calc(100vh - 48px)); justify-content: space-between; }
-  .portfolio-header .theme-toggle { margin: 0 auto 2px; }
+  .portfolio-header .portfolio-nav { min-height: 70px; }
   html[data-theme='light'] .portfolio-header { background: rgba(246, 239, 249, .88); }
+}
+@media (max-width: 480px) {
+  .nav-contact { margin-right: 42px; }
+  .theme-toggle { width: 34px; min-width: 34px; height: 34px; min-height: 34px; }
 }
 @keyframes button-glint { to { left: 145%; } }
 @media (prefers-reduced-motion: reduce) {
